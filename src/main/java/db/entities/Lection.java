@@ -21,15 +21,10 @@ public class Lection {
         contents = new ArrayList<>();
     }
 
-    public Lection(String id, String name, List<String> contents) {
-        this.id = id;
+    public Lection(String name, String title, List<String> contents) {
         this.name = name;
+        this.title = title;
         this.contents = contents;
-        contents = new ArrayList<>();
-    }
-
-    public void addContent(String contid){
-        contents.add(contid);
     }
 
     public String getId() {
@@ -46,6 +41,14 @@ public class Lection {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public List<String> getContents() {
