@@ -9,6 +9,9 @@ import org.xml.sax.helpers.DefaultHandler;
  */
 public class DataReader extends DefaultHandler {
     private Lection lection;
+    private Text text;
+    private Definition definition;
+
     private boolean lectureParsingFlag;
     private boolean textParsingFlag;
     private boolean definitionParsingFlag;
@@ -31,15 +34,17 @@ public class DataReader extends DefaultHandler {
             } else {
                 throw new SAXException("File can content only one lecture");
             }
-        } else if ("content".equalsIgnoreCase(qName)) {
-            //TODO: начало контента
         } else if ("text".equalsIgnoreCase(qName)) {
-            Text text = new Text();
+            text = new Text();
             text.setTitle(attributes.getValue("title"));
         } else if("definition".equalsIgnoreCase(qName)) {
             //TODO: определение
+            definition = new Definition();
+            definition.setTitle(attributes.getValue("title"));
         } else if ("term".equalsIgnoreCase(qName)) {
             //TODO: термин
+        } else if ("content".equalsIgnoreCase(qName)) {
+            //TODO: начало контента
         } else {
             throw new SAXException("Unknown tag: " + qName);
         }

@@ -10,17 +10,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Definition {
     @Id
     private String id;
-
+    private String title;
     private String term;
-    private String contetns;
+    private String contents;
 
     public Definition() {
     }
 
-    public Definition(String id, String term, String contetns) {
+    public Definition(String id, String term, String contents) {
         this.id = id;
         this.term = term;
-        this.contetns = contetns;
+        this.contents = contents;
     }
 
     public String getId() {
@@ -31,6 +31,14 @@ public class Definition {
         this.id = id;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getTerm() {
         return term;
     }
@@ -39,11 +47,11 @@ public class Definition {
         this.term = term;
     }
 
-    public String getContetns() {
-        return contetns;
+    public String getContentsents() {
+        return contents;
     }
 
-    public void setContetns(String contetns) {
-        this.contetns = contetns;
+    public void setContetns(String contents) {
+        this.contents = contents;
     }
 }
