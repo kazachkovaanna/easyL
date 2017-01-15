@@ -6,7 +6,9 @@
     <mvc:annotation-driven />
 
 
-    <context:component-scan base-package="easyL" />
+    <context:component-scan base-package="easyL">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+    </context:component-scan>
     <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/" />
