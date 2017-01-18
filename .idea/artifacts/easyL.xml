@@ -23,6 +23,8 @@
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.12.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-mongodb:1.9.6.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.1" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:1.4" />
         </element>
       </element>
     </root>

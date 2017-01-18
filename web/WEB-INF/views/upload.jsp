@@ -12,7 +12,8 @@
 </head>
 <body>
     <h>Выберите фал с лекцией</h>
-    <form enctype="multipart/form-data" method="post">
+    ${res} <br>
+    <form enctype="multipart/form-data" method="post" >
         <p><input type="file" name="lecture" >
             <input type="submit" value="Отправить"></p>
     </form>

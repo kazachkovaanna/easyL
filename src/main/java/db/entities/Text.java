@@ -2,6 +2,7 @@ package db.entities;
 
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
@@ -13,7 +14,7 @@ public class Text {
     private String id;
 
     private String title;
-    private String contents;
+    @TextIndexed private String contents;
 
     public Text() {
     }

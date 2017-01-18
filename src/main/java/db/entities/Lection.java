@@ -27,6 +27,10 @@ public class Lection {
         this.contents = contents;
     }
 
+    public void addContent(String content){
+        contents.add(content);
+    }
+
     public String getId() {
         return id;
     }

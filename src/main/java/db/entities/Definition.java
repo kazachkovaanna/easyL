@@ -13,6 +13,7 @@ public class Definition {
 
     private String term;
     private String contetns;
+    private String title;
 
     public Definition() {
     }
@@ -45,5 +46,13 @@ public class Definition {
 
     public void setContetns(String contetns) {
         this.contetns = contetns;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

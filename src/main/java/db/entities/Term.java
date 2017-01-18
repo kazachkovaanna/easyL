@@ -11,8 +11,10 @@ public class Term {
     @Id
     private String id;
     private String name;
+    private Integer occureness;
 
     public Term() {
+        occureness = 0;
     }
 
     public Term(String id, String name) {
@@ -34,5 +36,13 @@ public class Term {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getOccureness() {
+        return occureness;
+    }
+
+    public void setOccureness(Integer occureness) {
+        this.occureness = occureness;
     }
 }
